@@ -1,13 +1,14 @@
-class Chamado {
+class Thrower {
 
-	void chamar(String msg) {
-		System.out.print("["+msg);
+	void callThrow(Cannon cannon) {
+
+		cannon.boom();
+		
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.print("]");
 	}
 	
 }
